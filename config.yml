@@ -1,0 +1,4374 @@
+#============================OOOOO============================#
+# V---------------------------------------------------------V #
+# |              Multiple action achievements               | #
+# |       These require sub-categories and thresholds       | #
+# 5---------------------------------------------------------5 #
+#============================ooooo============================#
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# When a specific block is placed. You can use any of the following:
+# Когда установлен конкретный блок. Вы можете использовать любое из следующего:
+
+# - a block name (available names: github.com/PyvesB/advanced-achievements/wiki/Material-names). 
+# - имя блока (доступные имена: github.com/PyvesB/advanced-achievements/wiki/Material-names).
+
+# - notations such as sand:1 for pre-1.13 versions, which means sand item with metadata 1 (red sand). 
+# - такие обозначения, как песок: 1 для версий до 1.13, что означает объект «песок» с метаданными 1 (красный песок).
+
+# - an item's custom display name (e.g. the name of a player's head). 
+# - настраиваемое отображаемое имя элемента (например, имя головы игрока).
+
+# - на русском можно писать DisplayName, Message, Goal
+
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Places:
+  chest:
+    50:
+      # Optional, used in /aach list when achievement not yet received, and in advancements. 
+      # Необязательно, используется в списке / aach, когда достижение еще не получено, и в достижениях.
+      Goal: Разместите 50 сундуков.
+      # Description; displayed when receiving achievement, and in /aach book and /aach list. 
+      # Описание; отображается при получении достижения, а также в / каждой книге и / аах списке.
+      Message: §6Вы разместили 50 сундуков!
+      # Database name, must also be used in /aach delete and /aach check. 
+      # Имя базы данных также должно использоваться в / aach delete и / aach check.
+      Name: place_50_chest
+      # Displayed when receiving achievement, and in /aach book and /aach list. 
+      # Отображается при получении достижения, а также в / aach книге и / aach списке.
+      DisplayName: Эксперт по хранению
+      # Used to select the display item for this achievement in gui.yml. 
+      # Используется для выбора элемента отображения этого достижения в gui.yml.
+      Type: normal
+    500:
+      Goal: Разместите 500 сундуков.
+      Message: §6Вы разместили 500 сундуков!
+      Name: place_500_chest
+      DisplayName: Профисионал по сундукам
+      Type: normal
+    1000:
+      Goal: Разместите 1000 сундуков.
+      Message: §6Вы разместили 1000 сундуков!
+      Name: place_1000_chest
+      DisplayName: Ну уже нужно что то подозревать
+      Type: normal
+    5000:
+      Goal: Разместите 5000 сундуков.
+      Message: §6Вы разместили 5000 сундуков!
+      Name: place_5000_chest
+      DisplayName: Это уже страшно
+      Type: normal
+    10000:
+      Goal: Разместите 10000 сундуков.
+      Message: §6Вы разместили 10000 сундуков!
+      Name: place_10000_chest
+      DisplayName: Зачем ты столько поставил сундуков
+      Type: normal
+    25000:
+      Goal: Разместите 25000 сундуков.
+      Message: §6Вы разместили 25000 сундуков!
+      Name: place_25000_chest
+      DisplayName: Не ну ты конечно наркоман
+      Type: normal
+    50000:
+      Goal: Разместите 50000 сундуков.
+      Message: §6Вы разместили 50000 сундуков!
+      Name: place_50000_chest
+      DisplayName: Полный неадекват
+      Type: normal
+    100000:
+      Goal: Разместите 100000 сундуков.
+      Message: §6Вы разместили 100000 сундуков!
+      Name: place_100000_chest
+      DisplayName: Очень ты странный
+      Type: normal
+  stone:
+    100:
+      Goal: Разместите 100 камней.
+      Message: Сто размещенных камней!
+      Name: place_100_stone
+      DisplayName: Ну неплохо
+      Type: normal
+    1000:
+      Goal: Разместите 1000 камней.
+      Message: Тысяча установленных камней!
+      Name: place_1000_stone
+      DisplayName: Каменный жук
+      Type: normal
+    10000:
+      Goal: Разместите 10000 камней.
+      Message: Десять тысяч установленных камней!
+      Name: place_10000_stone
+      DisplayName: Каменный Бог
+      Type: normal
+    100000:
+      Goal: Разместите 100000 камней.
+      Message: Сто тысяч установленных камней!
+      Name: place_100000_stone
+      DisplayName: Мастер
+      Type: normal
+    250000:
+      Goal: Разместите 250000 камней.
+      Message: Двести пятьдесят тысяч установленных камней!
+      Name: place_250000_stone
+      DisplayName: Наркоман
+      Type: normal
+    500000:
+      Goal: Разместите 500000 камней.
+      Message: Пол милиона установленных камней!
+      Name: place_500000_stone
+      DisplayName: Неадекват
+      Type: normal
+    1000000:
+      Goal: Разместите 1000000 камней.
+      Message: Милион установленных камней!
+      Name: place_1000000_stone
+      DisplayName: Ну не понять этого человека
+      Type: normal
+    5000000:
+      Goal: Разместите 5000000 камней.
+      Message: Пять милионов установленных камней!
+      Name: place_5000000_stone
+      DisplayName: Нет равных
+      Type: normal
+      Reward:
+        Command:
+          Execute: "say §7ALERT: §4PLAYER§7 has become the §4STONE GOD§7!"
+          Display: Become the Stone God!
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# When a specific block is broken (available names: github.com/PyvesB/advanced-achievements/wiki/Material-names). 
+# Когда конкретный блок сломан (доступные имена: github.com/PyvesB/advanced-achievements/wiki/Material-names).
+
+# You can use notations such as sand:1 for pre-1.13 versions, which means sand item with metadata 1 (red sand). 
+# Вы можете использовать такие обозначения, как песок: 1 для версий до 1.13, что означает песочный элемент с метаданными 1 (красный песок).
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Breaks:
+  ice:
+    10:
+      Goal: Разбейте 10 ледяных блоков.
+      Message: Вы разбили 10 ледяных блоков!
+      Name: break_10_ice
+      DisplayName: Поставщик холодных напитков
+      Type: normal
+    100:
+      Goal: Разбейте 100 ледяных блоков.
+      Message: Вы разбили 100 ледяных блоков!
+      Name: break_100_ice
+      DisplayName: Поставщик холодных напитков
+      Type: normal
+    1000:
+      Goal: Разбейте 1000 ледяных блоков.
+      Message: Вы разбили 1000 ледяных блоков!
+      Name: break_1000_ice
+      DisplayName: Поставщик холодных напитков
+      Type: normal
+    5000:
+      Goal: Разбейте 5000 ледяных блоков.
+      Message: Вы разбили 5000 ледяных блоков!
+      Name: break_5000_ice
+      DisplayName: Поставщик холодных напитков
+      Type: normal
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# When "something" is killed. You can use any of the following: 
+# Когда "что-то" убито. Вы можете использовать любое из следующего:
+
+# - an entity type (available names: github.com/PyvesB/advanced-achievements/wiki/Entity-names). 
+# - тип сущности (доступные имена: github.com/PyvesB/advanced-achievements/wiki/Entity-names).
+
+# - poweredcreeper. 
+# - моторолаз.
+
+# - a mob's custom name (name tag/plugins such as Mythic Mobs) for Minecraft 1.8 or more recent. 
+# - пользовательское имя моба (тег имени / плагины, такие как Mythic Mobs) для Minecraft 1.8 или более поздней версии.
+
+# - player to track player kills as a whole. 
+# - игрок для отслеживания убийств игрока в целом.
+
+# - specificplayer - followed by player UUID to track how many times a specific player has been killed. 
+# - конкретный игрок - за которым следует UUID игрока, чтобы отслеживать, сколько раз был убит конкретный игрок.
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Kills:
+  elder_guardian:
+    1:
+      Goal: Убить Древнего стража.
+      Message: Ты убил Древнего стража!
+      Name: kills_1_elder_guardian
+      DisplayName: Любитель!
+      Type: normal
+      Reward:
+        Experience: 100
+    10:
+      Goal: Убить 10 Древних стражей.
+      Message: Ты убил 10 Древних стражей!
+      Name: kills_10_elder_guardian
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    25:
+      Goal: Убить 25 Древних стражей.
+      Message: Ты убил 25 Древних стражей!
+      Name: kills_25_elder_guardian
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    50:
+      Goal: Убить 50 Древних стражей.
+      Message: Ты убил 50 Древних стражей!
+      Name: kills_50_elder_guardian
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    100:
+      Goal: Убить 100 Древних стражей.
+      Message: Ты убил 100 Древних стражей!
+      Name: kills_100_elder_guardian
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Древних стражей.
+      Message: Ты убил 500 Древних стражей!
+      Name: kills_500_elder_guardian
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Древних стражей.
+      Message: Ты убил 1000 Древних стражей!
+      Name: kills_1000_elder_guardian
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  wither_skeleton:
+    1:
+      Goal: Убить Скелета-иссушителя.
+      Message: Ты убил Скелета-иссушителя!
+      Name: kills_1_wither_skeleton
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    100:
+      Goal: Убить 100 Скелетов-иссушителей.
+      Message: Ты убил 100 Скелетов-иссушителей!
+      Name: kills_100_wither_skeleton
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    1000:
+      Goal: Убить 1000 Скелетов-иссушителей.
+      Message: Ты убил 1000 Скелетов-иссушителей!
+      Name: kills_1000_wither_skeleton
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    10000:
+      Goal: Убить 10000 Скелетов-иссушителей.
+      Message: Ты убил 10000 Скелетов-иссушителей!
+      Name: kills_10000_wither_skeleton
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    100000:
+      Goal: Убить 100000 Скелетов-иссушителей.
+      Message: Ты убил 100000 Скелетов-иссушителей!
+      Name: kills_100000_wither_skeleton
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    250000:
+      Goal: Убить 250000 Скелетов-иссушителей.
+      Message: Ты убил 250000 Скелетов-иссушителей!
+      Name: kills_250000_wither_skeleton
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    500000:
+      Goal: Убить 500000 Скелетов-иссушителей.
+      Message: Ты убил 500000 Скелетов-иссушителей!
+      Name: kills_500000_wither_skeleton
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  stray:
+    1:
+      Goal: Убить Зимогора.
+      Message: Ты убил Зимогора!
+      Name: kills_1_stray
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    100:
+      Goal: Убить 100 Зимогоров.
+      Message: Ты убил 100 Зимогоров!
+      Name: kills_100_stray
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    1000:
+      Goal: Убить 1000 Зимогоров.
+      Message: Ты убил 1000 Зимогоров!
+      Name: kills_1000_stray
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    10000:
+      Goal: Убить 10000 Зимогоров.
+      Message: Ты убил 10000 Зимогоров!
+      Name: kills_10000_stray
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    100000:
+      Goal: Убить 100000 Зимогоров.
+      Message: Ты убил 100000 Зимогоров!
+      Name: kills_100000_stray
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    250000:
+      Goal: Убить 250000 Зимогоров.
+      Message: Ты убил 250000 Зимогоров!
+      Name: kills_250000_stray
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    500000:
+      Goal: Убить 500000 Зимогоров.
+      Message: Ты убил 500000 Зимогоров!
+      Name: kills_500000_stray
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  husk:
+    1:
+      Goal: Убить Кадавра.
+      Message: Ты убил Кадавра!
+      Name: kills_1_husk
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    100:
+      Goal: Убить 100 Кадавров.
+      Message: Ты убил 100 Кадавров!
+      Name: kills_100_husk
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    1000:
+      Goal: Убить 1000 Кадавров.
+      Message: Ты убил 1000 Кадавров!
+      Name: kills_1000_husk
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    10000:
+      Goal: Убить 10000 Кадавров.
+      Message: Ты убил 10000 Кадавров!
+      Name: kills_10000_husk
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    100000:
+      Goal: Убить 100000 Кадавров.
+      Message: Ты убил 100000 Кадавров!
+      Name: kills_100000_husk
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    250000:
+      Goal: Убить 250000 Кадавров.
+      Message: Ты убил 250000 Кадавров!
+      Name: kills_250000_husk
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    500000:
+      Goal: Убить 500000 Кадавров.
+      Message: Ты убил 500000 Кадавров!
+      Name: kills_500000_husk
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  zombie_villager:
+    1:
+      Goal: Убить Зомби-жителя.
+      Message: Ты убил Зомби-жителя!
+      Name: kills_1_zombie_villager
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    10:
+      Goal: Убить 10 Зомби-жителей.
+      Message: Ты убил 10 Зомби-жителей!
+      Name: kills_10_zombie_villager
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    25:
+      Goal: Убить 25 Зомби-жителей.
+      Message: Ты убил 25 Зомби-жителей!
+      Name: kills_25_zombie_villager
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    50:
+      Goal: Убить 50 Зомби-жителей.
+      Message: Ты убил 50 Зомби-жителей!
+      Name: kills_50_zombie_villager
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    75:
+      Goal: Убить 75 Зомби-жителей.
+      Message: Ты убил 75 Зомби-жителей!
+      Name: kills_75_zombie_villager
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    100:
+      Goal: Убить 100 Зомби-жителей.
+      Message: Ты убил 100 Зомби-жителей!
+      Name: kills_100_zombie_villager
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    150:
+      Goal: Убить 150 Зомби-жителей.
+      Message: Ты убил 150 Зомби-жителей!
+      Name: kills_150_zombie_villager
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  skeleton_horse:
+    1:
+      Goal: Убить Скелет лошади.
+      Message: Ты убил Скелет лошади!
+      Name: kills_1_skeleton_horse
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    10:
+      Goal: Убить 10 Скелетов лошадей.
+      Message: Ты убил 10 Скелетов лошадей!
+      Name: kills_10_skeleton_horse
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    25:
+      Goal: Убить 25 Скелетов лошадей.
+      Message: Ты убил 25 Скелетов лошадей!
+      Name: kills_25_skeleton_horse
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    50:
+      Goal: Убить 50 Скелетов лошадей.
+      Message: Ты убил 50 Скелетов лошадей!
+      Name: kills_50_skeleton_horse
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    75:
+      Goal: Убить 75 Скелетов лошадей.
+      Message: Ты убил 75 Скелетов лошадей!
+      Name: kills_75_skeleton_horse
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    100:
+      Goal: Убить 100 Скелетов лошадей.
+      Message: Ты убил 100 Скелетов лошадей!
+      Name: kills_100_skeleton_horse
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    150:
+      Goal: Убить 150 Скелетов лошадей.
+      Message: Ты убил 150 Скелетов лошадей!
+      Name: kills_150_skeleton_horse
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  donkey:
+    1:
+      Goal: Убить Осла.
+      Message: Ты убил Осла!
+      Name: kills_1_donkey
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Ослов.
+      Message: Ты убил 25 Ослов!
+      Name: kills_25_donkey
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Ослов.
+      Message: Ты убил 50 Ослов!
+      Name: kills_50_donkey
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Ослов.
+      Message: Ты убил 100 Ослов!
+      Name: kills_100_donkey
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    150:
+      Goal: Убить 150 Ослов.
+      Message: Ты убил 150 Ослов!
+      Name: kills_150_donkey
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    200:
+      Goal: Убить 200 Ослов.
+      Message: Ты убил 200 Ослов!
+      Name: kills_200_donkey
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    250:
+      Goal: Убить 250 Ослов.
+      Message: Ты убил 250 Ослов!
+      Name: kills_250_donkey
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  mule:
+    1:
+      Goal: Убить Мула.
+      Message: Ты убил Мула!
+      Name: kills_1_mule
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Мулов.
+      Message: Ты убил 25 Мулов!
+      Name: kills_25_mule
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Мулов.
+      Message: Ты убил 50 Мулов!
+      Name: kills_50_mule
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Мулов.
+      Message: Ты убил 100 Мулов!
+      Name: kills_100_mule
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    150:
+      Goal: Убить 150 Мулов.
+      Message: Ты убил 150 Мулов!
+      Name: kills_150_mule
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    200:
+      Goal: Убить 200 Мулов.
+      Message: Ты убил 200 Мулов!
+      Name: kills_200_mule
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    250:
+      Goal: Убить 250 Мулов.
+      Message: Ты убил 250 Мулов!
+      Name: kills_250_mule
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  evoker:
+    1:
+      Goal: Убить Заклинателя.
+      Message: Ты убил Заклинателя!
+      Name: kills_1_evoker
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Заклинателей.
+      Message: Ты убил 25 Заклинателей!
+      Name: kills_25_evoker
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Заклинателей.
+      Message: Ты убил 50 Заклинателей!
+      Name: kills_50_evoker
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Заклинателей.
+      Message: Ты убил 100 Заклинателей!
+      Name: kills_100_evoker
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Заклинателей.
+      Message: Ты убил 250 Заклинателей!
+      Name: kills_250_evoker
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Заклинателей.
+      Message: Ты убил 500 Заклинателей!
+      Name: kills_500_evoker
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Заклинателей.
+      Message: Ты убил 1000 Заклинателей!
+      Name: kills_1000_evoker
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  vex:
+    1:
+      Goal: Убить Досаждателя.
+      Message: Ты убил Досаждателя!
+      Name: kills_1_vex
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    10:
+      Goal: Убить 10 Досаждателей.
+      Message: Ты убил 10 Досаждателей!
+      Name: kills_10_vex
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    25:
+      Goal: Убить 25 Досаждателей.
+      Message: Ты убил 25 Досаждателей!
+      Name: kills_25_vex
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    50:
+      Goal: Убить 50 Досаждателей.
+      Message: Ты убил 50 Досаждателей!
+      Name: kills_50_vex
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    75:
+      Goal: Убить 75 Досаждателей.
+      Message: Ты убил 75 Досаждателей!
+      Name: kills_75_vex
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    100:
+      Goal: Убить 100 Досаждателей.
+      Message: Ты убил 100 Досаждателей!
+      Name: kills_100_vex
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    150:
+      Goal: Убить 150 Досаждателей.
+      Message: Ты убил 150 Досаждателей!
+      Name: kills_150_vex
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  vindicator:
+    1:
+      Goal: Убить Поборника.
+      Message: Ты убил Поборника!
+      Name: kills_1_vindicator
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Поборников.
+      Message: Ты убил 25 Поборников!
+      Name: kills_25_vindicator
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Поборников.
+      Message: Ты убил 50 Поборников!
+      Name: kills_50_vindicator
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Поборников.
+      Message: Ты убил 100 Поборников!
+      Name: kills_100_vindicator
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Поборников.
+      Message: Ты убил 250 Поборников!
+      Name: kills_250_vindicator
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Поборников.
+      Message: Ты убил 500 Поборников!
+      Name: kills_500_vindicator
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Поборников.
+      Message: Ты убил 1000 Поборников!
+      Name: kills_1000_vindicator
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  creeper:
+    1:
+      Goal: Убить Крипера.
+      Message: Ты убил Крипера!
+      Name: kills_1_creeper
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    100:
+      Goal: Убить 100 Криперов.
+      Message: Ты убил 100 Криперов!
+      Name: kills_100_creeper
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    1000:
+      Goal: Убить 1000 Криперов.
+      Message: Ты убил 1000 Криперов!
+      Name: kills_1000_creeper
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    10000:
+      Goal: Убить 10000 Криперов.
+      Message: Ты убил 10000 Криперов!
+      Name: kills_10000_creeper
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    100000:
+      Goal: Убить 100000 Криперов.
+      Message: Ты убил 100000 Криперов!
+      Name: kills_100000_creeper
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    250000:
+      Goal: Убить 250000 Криперов.
+      Message: Ты убил 250000 Криперов!
+      Name: kills_250000_creeper
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    500000:
+      Goal: Убить 500000 Криперов.
+      Message: Ты убил 500000 Криперов!
+      Name: kills_500000_creeper
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  skeleton:
+    1:
+      Goal: Убить Скелета.
+      Message: Ты убил Скелета!
+      Name: kills_1_skeleton
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    100:
+      Goal: Убить 100 Скелетов.
+      Message: Ты убил 100 Скелетов!
+      Name: kills_100_skeleton
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    1000:
+      Goal: Убить 1000 Скелетов.
+      Message: Ты убил 1000 Скелетов!
+      Name: kills_1000_skeleton
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    10000:
+      Goal: Убить 10000 Скелетов.
+      Message: Ты убил 10000 Скелетов!
+      Name: kills_10000_skeleton
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    100000:
+      Goal: Убить 100000 Скелетов.
+      Message: Ты убил 100000 Скелетов!
+      Name: kills_100000_skeleton
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    250000:
+      Goal: Убить 250000 Скелетов.
+      Message: Ты убил 250000 Скелетов!
+      Name: kills_250000_skeleton
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    500000:
+      Goal: Убить 500000 Скелетов.
+      Message: Ты убил 500000 Скелетов!
+      Name: kills_500000_skeleton
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  spider:
+    1:
+      Goal: Убить Паука.
+      Message: Ты убил Паука!
+      Name: kills_1_spider
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    100:
+      Goal: Убить 100 Пауков.
+      Message: Ты убил 100 Пауков!
+      Name: kills_100_spider
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    1000:
+      Goal: Убить 1000 Пауков.
+      Message: Ты убил 1000 Пауков!
+      Name: kills_1000_spider
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    10000:
+      Goal: Убить 10000 Пауков.
+      Message: Ты убил 10000 Пауков!
+      Name: kills_10000_spider
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    100000:
+      Goal: Убить 100000 Пауков.
+      Message: Ты убил 100000 Пауков!
+      Name: kills_100000_spider
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    250000:
+      Goal: Убить 250000 Пауков.
+      Message: Ты убил 250000 Пауков!
+      Name: kills_250000_spider
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    500000:
+      Goal: Убить 500000 Пауков.
+      Message: Ты убил 500000 Пауков!
+      Name: kills_500000_spider
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  zombie:
+    1:
+      Goal: Убить Зомби.
+      Message: Ты убил Зомби!
+      Name: kills_1_zombie
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    100:
+      Goal: Убить 100 Зомби.
+      Message: Ты убил 100 Зомби!
+      Name: kills_100_zombie
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    1000:
+      Goal: Убить 1000 Зомби.
+      Message: Ты убил 1000 Зомби!
+      Name: kills_1000_zombie
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    10000:
+      Goal: Убить 10000 Зомби.
+      Message: Ты убил 10000 Зомби!
+      Name: kills_10000_zombie
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    100000:
+      Goal: Убить 100000 Зомби.
+      Message: Ты убил 100000 Зомби!
+      Name: kills_100000_zombie
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    250000:
+      Goal: Убить 250000 Зомби.
+      Message: Ты убил 250000 Зомби!
+      Name: kills_250000_zombie
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    500000:
+      Goal: Убить 500000 Зомби.
+      Message: Ты убил 500000 Зомби!
+      Name: kills_500000_zombie
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  slime:
+    1:
+      Goal: Убить Слайма.
+      Message: Ты убил Слайма!
+      Name: kills_1_slime
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    100:
+      Goal: Убить 100 Слаймов.
+      Message: Ты убил 100 Слаймов!
+      Name: kills_100_slime
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    1000:
+      Goal: Убить 1000 Слаймов.
+      Message: Ты убил 1000 Слаймов!
+      Name: kills_1000_slime
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    10000:
+      Goal: Убить 10000 Слаймов.
+      Message: Ты убил 10000 Слаймов!
+      Name: kills_10000_slime
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    100000:
+      Goal: Убить 100000 Слаймов.
+      Message: Ты убил 100000 Слаймов!
+      Name: kills_100000_slime
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    250000:
+      Goal: Убить 250000 Слаймов.
+      Message: Ты убил 250000 Слаймов!
+      Name: kills_250000_slime
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    500000:
+      Goal: Убить 500000 Слаймов.
+      Message: Ты убил 500000 Слаймов!
+      Name: kills_500000_slime
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  ghast:
+    1:
+      Goal: Убить Гаста.
+      Message: Ты убил Гаста!
+      Name: kills_1_ghast
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Гастов.
+      Message: Ты убил 25 Гастов!
+      Name: kills_25_ghast
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Гастов.
+      Message: Ты убил 50 Гастов!
+      Name: kills_50_ghast
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Гастов.
+      Message: Ты убил 100 Гастов!
+      Name: kills_100_ghast
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Гастов.
+      Message: Ты убил 250 Гастов!
+      Name: kills_250_ghast
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Гастов.
+      Message: Ты убил 500 Гастов!
+      Name: kills_500_ghast
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Гастов.
+      Message: Ты убил 1000 Гастов!
+      Name: kills_1000_ghast
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  zombified_piglin:
+    1:
+      Goal: Убить Зомбифицированого пиглина.
+      Message: Ты убил Зомбифицированого пиглина!
+      Name: kills_1_zombified_piglin
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    100:
+      Goal: Убить 100 Зомбифицированных пиглинов.
+      Message: Ты убил 100 Зомбифицированных пиглинов!
+      Name: kills_100_zombified_piglin
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    1000:
+      Goal: Убить 1000 Зомбифицированных пиглинов.
+      Message: Ты убил 1000 Зомбифицированных пиглинов!
+      Name: kills_1000_zombified_piglin
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    10000:
+      Goal: Убить 10000 Зомбифицированных пиглинов.
+      Message: Ты убил 10000 Зомбифицированных пиглинов!
+      Name: kills_10000_zombified_piglin
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    100000:
+      Goal: Убить 100000 Зомбифицированных пиглинов.
+      Message: Ты убил 100000 Зомбифицированных пиглинов!
+      Name: kills_100000_zombified_piglin
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    250000:
+      Goal: Убить 250000 Зомбифицированных пиглинов.
+      Message: Ты убил 250000 Зомбифицированных пиглинов!
+      Name: kills_250000_zombified_piglin
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    500000:
+      Goal: Убить 500000 Зомбифицированных пиглинов.
+      Message: Ты убил 500000 Зомбифицированных пиглинов!
+      Name: kills_500000_zombified_piglin
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  enderman:
+    1:
+      Goal: Убить Эндермена.
+      Message: Ты убил Эндермена!
+      Name: kills_1_enderman
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    100:
+      Goal: Убить 100 Эндерменов.
+      Message: Ты убил 100 Эндерменов!
+      Name: kills_100_enderman
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    1000:
+      Goal: Убить 1000 Эндерменов.
+      Message: Ты убил 1000 Эндерменов!
+      Name: kills_1000_enderman
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    10000:
+      Goal: Убить 10000 Эндерменов.
+      Message: Ты убил 10000 Эндерменов!
+      Name: kills_10000_enderman
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    100000:
+      Goal: Убить 100000 Эндерменов.
+      Message: Ты убил 100000 Эндерменов!
+      Name: kills_100000_enderman
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    250000:
+      Goal: Убить 250000 Эндерменов.
+      Message: Ты убил 250000 Эндерменов!
+      Name: kills_250000_enderman
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    500000:
+      Goal: Убить 500000 Эндерменов.
+      Message: Ты убил 500000 Эндерменов!
+      Name: kills_500000_enderman
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  silverfish:
+    1:
+      Goal: Убить Чешуйницу.
+      Message: Ты убил Чешуйницу!
+      Name: kills_1_silverfish
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Чешуйниц.
+      Message: Ты убил 25 Чешуйниц!
+      Name: kills_25_silverfish
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Чешуйниц.
+      Message: Ты убил 50 Чешуйниц!
+      Name: kills_50_silverfish
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Чешуйниц.
+      Message: Ты убил 100 Чешуйниц!
+      Name: kills_100_silverfish
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Чешуйниц.
+      Message: Ты убил 250 Чешуйниц!
+      Name: kills_250_silverfish
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Чешуйниц.
+      Message: Ты убил 500 Чешуйниц!
+      Name: kills_500_silverfish
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Чешуйниц.
+      Message: Ты убил 1000 Чешуйниц!
+      Name: kills_1000_silverfish
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  blaze:
+    1:
+      Goal: Убить Ифрита.
+      Message: Ты убил Ифрита!
+      Name: kills_1_blaze
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Ифритов.
+      Message: Ты убил 25 Ифритов!
+      Name: kills_25_blaze
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Ифритов.
+      Message: Ты убил 50 Ифритов!
+      Name: kills_50_blaze
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Ифритов.
+      Message: Ты убил 100 Ифритов!
+      Name: kills_100_blaze
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Ифритов.
+      Message: Ты убил 250 Ифритов!
+      Name: kills_250_blaze
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Ифритов.
+      Message: Ты убил 500 Ифритов!
+      Name: kills_500_blaze
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Ифритов.
+      Message: Ты убил 1000 Ифритов!
+      Name: kills_1000_blaze
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  cave_spider:
+    1:
+      Goal: Убить Пещерного паука.
+      Message: Ты убил Пещерного паука!
+      Name: kills_1_cave_spider
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Пещерных пауков.
+      Message: Ты убил 25 Пещерных пауков!
+      Name: kills_25_cave_spider
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Пещерных пауков.
+      Message: Ты убил 50 Пещерных пауков!
+      Name: kills_50_cave_spider
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Пещерных пауков.
+      Message: Ты убил 100 Пещерных пауков!
+      Name: kills_100_cave_spider
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Пещерных пауков.
+      Message: Ты убил 250 Пещерных пауков!
+      Name: kills_250_cave_spider
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Пещерных пауков.
+      Message: Ты убил 500 Пещерных пауков!
+      Name: kills_500_cave_spider
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Пещерных пауков.
+      Message: Ты убил 1000 Пещерных пауков!
+      Name: kills_1000_cave_spider
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  magma_cube:
+    1:
+      Goal: Убить Лавового куба.
+      Message: Ты убил Лавового куба!
+      Name: kills_1_magma_cube
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Лавовых кубов.
+      Message: Ты убил 25 Лавовых кубов!
+      Name: kills_25_magma_cube
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Лавовых кубов.
+      Message: Ты убил 50 Лавовых кубов!
+      Name: kills_50_magma_cube
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Лавовых кубов.
+      Message: Ты убил 100 Лавовых кубов!
+      Name: kills_100_magma_cube
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Лавовых кубов.
+      Message: Ты убил 250 Лавовых кубов!
+      Name: kills_250_magma_cube
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Лавовых кубов.
+      Message: Ты убил 500 Лавовых кубов!
+      Name: kills_500_magma_cube
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Лавовых кубов.
+      Message: Ты убил 1000 Лавовых кубов!
+      Name: kills_1000_magma_cube
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  ender_dragon:
+    1:
+      Goal: Убить Дракона Края.
+      Message: Ты убил Дракона Края!
+      Name: kills_1_ender_dragon
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    10:
+      Goal: Убить 10 Драконов Края.
+      Message: Ты убил 10 Драконов Края!
+      Name: kills_10_ender_dragon
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    25:
+      Goal: Убить 25 Драконов Края.
+      Message: Ты убил 25 Драконов Края!
+      Name: kills_25_ender_dragon
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    50:
+      Goal: Убить 50 Драконов Края.
+      Message: Ты убил 50 Драконов Края!
+      Name: kills_50_ender_dragon
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    75:
+      Goal: Убить 75 Драконов Края.
+      Message: Ты убил 75 Драконов Края!
+      Name: kills_75_ender_dragon
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    100:
+      Goal: Убить 100 Драконов Края.
+      Message: Ты убил 100 Драконов Края!
+      Name: kills_100_ender_dragon
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    150:
+      Goal: Убить 150 Драконов Края.
+      Message: Ты убил 150 Драконов Края!
+      Name: kills_150_ender_dragon
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  wither:
+    1:
+      Goal: Убить Иссушителя.
+      Message: Ты убил Иссушителя!
+      Name: kills_1_wither
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Иссушителей.
+      Message: Ты убил 25 Иссушителей!
+      Name: kills_25_wither
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Иссушителей.
+      Message: Ты убил 50 Иссушителей!
+      Name: kills_50_wither
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Иссушителей.
+      Message: Ты убил 100 Иссушителей!
+      Name: kills_100_wither
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Иссушителей.
+      Message: Ты убил 250 Иссушителей!
+      Name: kills_250_wither
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Иссушителей.
+      Message: Ты убил 500 Иссушителей!
+      Name: kills_500_wither
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Иссушителей.
+      Message: Ты убил 1000 Иссушителей!
+      Name: kills_1000_wither
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  bat:
+    1:
+      Goal: Убить Летучую мышь.
+      Message: Ты убил Летучую мышь!
+      Name: kills_1_bat
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    10:
+      Goal: Убить 10 Летучих мышей.
+      Message: Ты убил 10 Летучих мышей!
+      Name: kills_10_bat
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    25:
+      Goal: Убить 25 Летучих мышей.
+      Message: Ты убил 25 Летучих мышей!
+      Name: kills_25_bat
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    50:
+      Goal: Убить 50 Летучих мышей.
+      Message: Ты убил 50 Летучих мышей!
+      Name: kills_50_bat
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    75:
+      Goal: Убить 75 Летучих мышей.
+      Message: Ты убил 75 Летучих мышей!
+      Name: kills_75_bat
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    100:
+      Goal: Убить 100 Летучих мышей.
+      Message: Ты убил 100 Летучих мышей!
+      Name: kills_100_bat
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    150:
+      Goal: Убить 150 Летучих мышей.
+      Message: Ты убил 150 Летучих мышей!
+      Name: kills_150_bat
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  witch:
+    1:
+      Goal: Убить Ведьму.
+      Message: Ты убил Ведьму!
+      Name: kills_1_witch
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    100:
+      Goal: Убить 100 Ведьм.
+      Message: Ты убил 100 Ведьм!
+      Name: kills_100_witch
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    1000:
+      Goal: Убить 1000 Ведьм.
+      Message: Ты убил 1000 Ведьм!
+      Name: kills_1000_witch
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    10000:
+      Goal: Убить 10000 Ведьм.
+      Message: Ты убил 10000 Ведьм!
+      Name: kills_10000_witch
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    100000:
+      Goal: Убить 100000 Ведьм.
+      Message: Ты убил 100000 Ведьм!
+      Name: kills_100000_witch
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    250000:
+      Goal: Убить 250000 Ведьм.
+      Message: Ты убил 250000 Ведьм!
+      Name: kills_250000_witch
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    500000:
+      Goal: Убить 500000 Ведьм.
+      Message: Ты убил 500000 Ведьм!
+      Name: kills_500000_witch
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  endermite:
+    1:
+      Goal: Убить Чешуйницу Края.
+      Message: Ты убил Чешуйницу Края!
+      Name: kills_1_endermite
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Чешуйниц Края.
+      Message: Ты убил 25 Чешуйниц Края!
+      Name: kills_25_endermite
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Чешуйниц Края.
+      Message: Ты убил 50 Чешуйниц Края!
+      Name: kills_50_endermite
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Чешуйниц Края.
+      Message: Ты убил 100 Чешуйниц Края!
+      Name: kills_100_endermite
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    150:
+      Goal: Убить 150 Чешуйниц Края.
+      Message: Ты убил 150 Чешуйниц Края!
+      Name: kills_150_endermite
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    200:
+      Goal: Убить 200 Чешуйниц Края.
+      Message: Ты убил 200 Чешуйниц Края!
+      Name: kills_200_endermite
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    250:
+      Goal: Убить 250 Чешуйниц Края.
+      Message: Ты убил 250 Чешуйниц Края!
+      Name: kills_250_endermite
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  guardian:
+    1:
+      Goal: Убить Стража.
+      Message: Ты убил Стража!
+      Name: kills_1_guardian
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    100:
+      Goal: Убить 100 Стражей.
+      Message: Ты убил 100 Стражей!
+      Name: kills_100_guardian
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    1000:
+      Goal: Убить 1000 Стражей.
+      Message: Ты убил 1000 Стражей!
+      Name: kills_1000_guardian
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    10000:
+      Goal: Убить 10000 Стражей.
+      Message: Ты убил 10000 Стражей!
+      Name: kills_10000_guardian
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    100000:
+      Goal: Убить 100000 Стражей.
+      Message: Ты убил 100000 Стражей!
+      Name: kills_100000_guardian
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    250000:
+      Goal: Убить 250000 Стражей.
+      Message: Ты убил 250000 Стражей!
+      Name: kills_250000_guardian
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    500000:
+      Goal: Убить 500000 Стражей.
+      Message: Ты убил 500000 Стражей!
+      Name: kills_500000_guardian
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  shulker:
+    1:
+      Goal: Убить Шалкера.
+      Message: Ты убил Шалкера!
+      Name: kills_1_shulker
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Шалкеров.
+      Message: Ты убил 25 Шалкеров!
+      Name: kills_25_shulker
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Шалкеров.
+      Message: Ты убил 50 Шалкеров!
+      Name: kills_50_shulker
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Шалкеров.
+      Message: Ты убил 100 Шалкеров!
+      Name: kills_100_shulker
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Шалкеров.
+      Message: Ты убил 250 Шалкеров!
+      Name: kills_250_shulker
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Шалкеров.
+      Message: Ты убил 500 Шалкеров!
+      Name: kills_500_shulker
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Шалкеров.
+      Message: Ты убил 1000 Шалкеров!
+      Name: kills_1000_shulker
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  pig:
+    1:
+      Goal: Убить Свинью.
+      Message: Ты убил Свинью!
+      Name: kills_1_pig
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Свиней.
+      Message: Ты убил 25 Свиней!
+      Name: kills_25_pig
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Свиней.
+      Message: Ты убил 50 Свиней!
+      Name: kills_50_pig
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Свиней.
+      Message: Ты убил 100 Свиней!
+      Name: kills_100_pig
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Свиней.
+      Message: Ты убил 250 Свиней!
+      Name: kills_250_pig
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Свиней.
+      Message: Ты убил 500 Свиней!
+      Name: kills_500_pig
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Свиней.
+      Message: Ты убил 1000 Свиней!
+      Name: kills_1000_pig
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  sheep:
+    1:
+      Goal: Убить Овцу.
+      Message: Ты убил Овцу!
+      Name: kills_1_sheep
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Овец.
+      Message: Ты убил 25 Овец!
+      Name: kills_25_sheep
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Овец.
+      Message: Ты убил 50 Овец!
+      Name: kills_50_sheep
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Овец.
+      Message: Ты убил 100 Овец!
+      Name: kills_100_sheep
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Овец.
+      Message: Ты убил 250 Овец!
+      Name: kills_250_sheep
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Овец.
+      Message: Ты убил 500 Овец!
+      Name: kills_500_sheep
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Овец.
+      Message: Ты убил 1000 Овец!
+      Name: kills_1000_sheep
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  cow:
+    1:
+      Goal: Убить Корову.
+      Message: Ты убил Корову!
+      Name: kills_1_cow
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Коров.
+      Message: Ты убил 25 Коров!
+      Name: kills_25_cow
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Коров.
+      Message: Ты убил 50 Коров!
+      Name: kills_50_cow
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Коров.
+      Message: Ты убил 100 Коров!
+      Name: kills_100_cow
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Коров.
+      Message: Ты убил 250 Коров!
+      Name: kills_250_cow
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Коров.
+      Message: Ты убил 500 Коров!
+      Name: kills_500_cow
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Коров.
+      Message: Ты убил 1000 Коров!
+      Name: kills_1000_cow
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  chicken:
+    1:
+      Goal: Убить Курицу.
+      Message: Ты убил Курицу!
+      Name: kills_1_chicken
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Куриц.
+      Message: Ты убил 25 Куриц!
+      Name: kills_25_chicken
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Куриц.
+      Message: Ты убил 50 Куриц!
+      Name: kills_50_chicken
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Куриц.
+      Message: Ты убил 100 Куриц!
+      Name: kills_100_chicken
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Куриц.
+      Message: Ты убил 250 Куриц!
+      Name: kills_250_chicken
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Куриц.
+      Message: Ты убил 500 Куриц!
+      Name: kills_500_chicken
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Куриц.
+      Message: Ты убил 1000 Куриц!
+      Name: kills_1000_chicken
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  squid:
+    1:
+      Goal: Убить Спрута.
+      Message: Ты убил Спрута!
+      Name: kills_1_squid
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Спрутов.
+      Message: Ты убил 25 Спрутов!
+      Name: kills_25_squid
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Спрутов.
+      Message: Ты убил 50 Спрутов!
+      Name: kills_50_squid
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Спрутов.
+      Message: Ты убил 100 Спрутов!
+      Name: kills_100_squid
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Спрутов.
+      Message: Ты убил 250 Спрутов!
+      Name: kills_250_squid
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Спрутов.
+      Message: Ты убил 500 Спрутов!
+      Name: kills_500_squid
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Спрутов.
+      Message: Ты убил 1000 Спрутов!
+      Name: kills_1000_squid
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  wolf:
+    1:
+      Goal: Убить Волка.
+      Message: Ты убил Волка!
+      Name: kills_1_wolf
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Волков.
+      Message: Ты убил 25 Волков!
+      Name: kills_25_wolf
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Волков.
+      Message: Ты убил 50 Волков!
+      Name: kills_50_wolf
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Волков.
+      Message: Ты убил 100 Волков!
+      Name: kills_100_wolf
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Волков.
+      Message: Ты убил 250 Волков!
+      Name: kills_250_wolf
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Волков.
+      Message: Ты убил 500 Волков!
+      Name: kills_500_wolf
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Волков.
+      Message: Ты убил 1000 Волков!
+      Name: kills_1000_wolf
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  mushroom_cow:
+    1:
+      Goal: Убить Грибную корову.
+      Message: Ты убил Грибную корову!
+      Name: kills_1_mushroom_cow
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Грибных коров.
+      Message: Ты убил 25 Грибных коров!
+      Name: kills_25_mushroom_cow
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Грибных коров.
+      Message: Ты убил 50 Грибных коров!
+      Name: kills_50_mushroom_cow
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Грибных коров.
+      Message: Ты убил 100 Грибных коров!
+      Name: kills_100_mushroom_cow
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Грибных коров.
+      Message: Ты убил 250 Грибных коров!
+      Name: kills_250_mushroom_cow
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Грибных коров.
+      Message: Ты убил 500 Грибных коров!
+      Name: kills_500_mushroom_cow
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Грибных коров.
+      Message: Ты убил 1000 Грибных коров!
+      Name: kills_1000_mushroom_cow
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  snowman:
+    1:
+      Goal: Убить Снежного голема.
+      Message: Ты убил Снежного голема!
+      Name: kills_1_snowman
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Снежных големов.
+      Message: Ты убил 25 Снежных големов!
+      Name: kills_25_snowman
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Снежных големов.
+      Message: Ты убил 50 Снежных големов!
+      Name: kills_50_snowman
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Снежных големов.
+      Message: Ты убил 100 Снежных големов!
+      Name: kills_100_snowman
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Снежных големов.
+      Message: Ты убил 250 Снежных големов!
+      Name: kills_250_snowman
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Снежных големов.
+      Message: Ты убил 500 Снежных големов!
+      Name: kills_500_snowman
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Снежных големов.
+      Message: Ты убил 1000 Снежных големов!
+      Name: kills_1000_snowman
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  ocelot:
+    1:
+      Goal: Убить Оцелота.
+      Message: Ты убил Оцелота!
+      Name: kills_1_ocelot
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Оцелотов.
+      Message: Ты убил 25 Оцелотов!
+      Name: kills_25_ocelot
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Оцелотов.
+      Message: Ты убил 50 Оцелотов!
+      Name: kills_50_ocelot
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Оцелотов.
+      Message: Ты убил 100 Оцелотов!
+      Name: kills_100_ocelot
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Оцелотов.
+      Message: Ты убил 250 Оцелотов!
+      Name: kills_250_ocelot
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Оцелотов.
+      Message: Ты убил 500 Оцелотов!
+      Name: kills_500_ocelot
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Оцелотов.
+      Message: Ты убил 1000 Оцелотов!
+      Name: kills_1000_ocelot
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  iron_golem:
+    1:
+      Goal: Убить Железного голема.
+      Message: Ты убил Железного голема!
+      Name: kills_1_iron_golem
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Железных големов.
+      Message: Ты убил 25 Железных големов!
+      Name: kills_25_iron_golem
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Железных големов.
+      Message: Ты убил 50 Железных големов!
+      Name: kills_50_iron_golem
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Железных големов.
+      Message: Ты убил 100 Железных големов!
+      Name: kills_100_iron_golem
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Железных големов.
+      Message: Ты убил 250 Железных големов!
+      Name: kills_250_iron_golem
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Железных големов.
+      Message: Ты убил 500 Железных големов!
+      Name: kills_500_iron_golem
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Железных големов.
+      Message: Ты убил 1000 Железных големов!
+      Name: kills_1000_iron_golem
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  horse:
+    1:
+      Goal: Убить Лошадь.
+      Message: Ты убил Лошадь!
+      Name: kills_1_horse
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Лошадей.
+      Message: Ты убил 25 Лошадей!
+      Name: kills_25_horse
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Лошадей.
+      Message: Ты убил 50 Лошадей!
+      Name: kills_50_horse
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Лошадей.
+      Message: Ты убил 100 Лошадей!
+      Name: kills_100_horse
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Лошадей.
+      Message: Ты убил 250 Лошадей!
+      Name: kills_250_horse
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Лошадей.
+      Message: Ты убил 500 Лошадей!
+      Name: kills_500_horse
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Лошадей.
+      Message: Ты убил 1000 Лошадей!
+      Name: kills_1000_horse
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  rabbit:
+    1:
+      Goal: Убить Кролика.
+      Message: Ты убил Кролика!
+      Name: kills_1_rabbit
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Кроликов.
+      Message: Ты убил 25 Кроликов!
+      Name: kills_25_rabbit
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Кроликов.
+      Message: Ты убил 50 Кроликов!
+      Name: kills_50_rabbit
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Кроликов.
+      Message: Ты убил 100 Кроликов!
+      Name: kills_100_rabbit
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Кроликов.
+      Message: Ты убил 250 Кроликов!
+      Name: kills_250_rabbit
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Кроликов.
+      Message: Ты убил 500 Кроликов!
+      Name: kills_500_rabbit
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Кроликов.
+      Message: Ты убил 1000 Кроликов!
+      Name: kills_1000_rabbit
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  llama:
+    1:
+      Goal: Убить Ламу.
+      Message: Ты убил Ламу!
+      Name: kills_1_llama
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Лам.
+      Message: Ты убил 25 Лам!
+      Name: kills_25_llama
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Лам.
+      Message: Ты убил 50 Лам!
+      Name: kills_50_llama
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Лам.
+      Message: Ты убил 100 Лам!
+      Name: kills_100_llama
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Лам.
+      Message: Ты убил 250 Лам!
+      Name: kills_250_llama
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Лам.
+      Message: Ты убил 500 Лам!
+      Name: kills_500_llama
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Лам.
+      Message: Ты убил 1000 Лам!
+      Name: kills_1000_llama
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  trader_llama:
+    1:
+      Goal: Убить Ламу странствующего торговца.
+      Message: Ты убил Ламу странствующего торговца!
+      Name: kills_1_trader_llama
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Лам странствующего торговца.
+      Message: Ты убил 25 Лам странствующего торговца!
+      Name: kills_25_trader_llama
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Лам странствующего торговца.
+      Message: Ты убил 50 Лам странствующего торговца!
+      Name: kills_50_trader_llama
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Лам странствующего торговца.
+      Message: Ты убил 100 Лам странствующего торговца!
+      Name: kills_100_trader_llama
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Лам странствующего торговца.
+      Message: Ты убил 250 Лам странствующего торговца!
+      Name: kills_250_trader_llama
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Лам странствующего торговца.
+      Message: Ты убил 500 Лам странствующего торговца!
+      Name: kills_500_trader_llama
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Лам странствующего торговца.
+      Message: Ты убил 1000 Лам странствующего торговца!
+      Name: kills_1000_trader_llama
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  parrot:
+    1:
+      Goal: Убить Попугая.
+      Message: Ты убил Попугая!
+      Name: kills_1_parrot
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Попугаев.
+      Message: Ты убил 25 Попугаев!
+      Name: kills_25_parrot
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Попугаев.
+      Message: Ты убил 50 Попугаев!
+      Name: kills_50_parrot
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Попугаев.
+      Message: Ты убил 100 Попугаев!
+      Name: kills_100_parrot
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Попугаев.
+      Message: Ты убил 250 Попугаев!
+      Name: kills_250_parrot
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Попугаев.
+      Message: Ты убил 500 Попугаев!
+      Name: kills_500_parrot
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Попугаев.
+      Message: Ты убил 1000 Попугаев!
+      Name: kills_1000_parrot
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  villager:
+    1:
+      Goal: Убить Жителя.
+      Message: Ты убил Жителя!
+      Name: kills_1_villager
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Жителей.
+      Message: Ты убил 25 Жителей!
+      Name: kills_25_villager
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Жителей.
+      Message: Ты убил 50 Жителей!
+      Name: kills_50_villager
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Жителей.
+      Message: Ты убил 100 Жителей!
+      Name: kills_100_villager
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Жителей.
+      Message: Ты убил 250 Жителей!
+      Name: kills_250_villager
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Жителей.
+      Message: Ты убил 500 Жителей!
+      Name: kills_500_villager
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Жителей.
+      Message: Ты убил 1000 Жителей!
+      Name: kills_1000_villager
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  turtle:
+    1:
+      Goal: Убить Черепаху.
+      Message: Ты убил Черепаху!
+      Name: kills_1_turtle
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Черепах.
+      Message: Ты убил 25 Черепах!
+      Name: kills_25_turtle
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Черепах.
+      Message: Ты убил 50 Черепах!
+      Name: kills_50_turtle
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Черепах.
+      Message: Ты убил 100 Черепах!
+      Name: kills_100_turtle
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Черепах.
+      Message: Ты убил 250 Черепах!
+      Name: kills_250_turtle
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Черепах.
+      Message: Ты убил 500 Черепах!
+      Name: kills_500_turtle
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Черепах.
+      Message: Ты убил 1000 Черепах!
+      Name: kills_1000_turtle
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  cod:
+    1:
+      Goal: Убить Треску.
+      Message: Ты убил Треску!
+      Name: kills_1_cod
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Трески.
+      Message: Ты убил 25 Трески!
+      Name: kills_25_cod
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Трески.
+      Message: Ты убил 50 Трески!
+      Name: kills_50_cod
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Трески.
+      Message: Ты убил 100 Трески!
+      Name: kills_100_cod
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Трески.
+      Message: Ты убил 250 Трески!
+      Name: kills_250_cod
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Трески.
+      Message: Ты убил 500 Трески!
+      Name: kills_500_cod
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Трески.
+      Message: Ты убил 1000 Трески!
+      Name: kills_1000_cod
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  salmon:
+    1:
+      Goal: Убить Лосося.
+      Message: Ты убил Лосося!
+      Name: kills_1_salmon
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Рыб лосося.
+      Message: Ты убил 25 Рыб лосося!
+      Name: kills_25_salmon
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Лосося.
+      Message: Ты убил 50 Лосося!
+      Name: kills_50_salmon
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Лосося.
+      Message: Ты убил 100 Лосося!
+      Name: kills_100_salmon
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Лосося.
+      Message: Ты убил 250 Лосося!
+      Name: kills_250_salmon
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Лосося.
+      Message: Ты убил 500 Лосося!
+      Name: kills_500_salmon
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Лосося.
+      Message: Ты убил 1000 Лосося!
+      Name: kills_1000_salmon
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  pufferfish:
+    1:
+      Goal: Убить Иглобрюха.
+      Message: Ты убил Иглобрюха!
+      Name: kills_1_pufferfish
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Иглобрюха.
+      Message: Ты убил 25 Иглобрюха!
+      Name: kills_25_pufferfish
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Иглобрюха.
+      Message: Ты убил 50 Иглобрюха!
+      Name: kills_50_pufferfish
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Иглобрюха.
+      Message: Ты убил 100 Иглобрюха!
+      Name: kills_100_pufferfish
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Иглобрюха.
+      Message: Ты убил 250 Иглобрюха!
+      Name: kills_250_pufferfish
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Иглобрюха.
+      Message: Ты убил 500 Иглобрюха!
+      Name: kills_500_pufferfish
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Иглобрюха.
+      Message: Ты убил 1000 Иглобрюха!
+      Name: kills_1000_pufferfish
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  tropical_fish:
+    1:
+      Goal: Убить Тропическую рыбу.
+      Message: Ты убил Тропическую рыбу!
+      Name: kills_1_tropical_fish
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Тропической рыбы.
+      Message: Ты убил 25 Тропической рыбы!
+      Name: kills_25_tropical_fish
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Тропической рыбы.
+      Message: Ты убил 50 Тропической рыбы!
+      Name: kills_50_tropical_fish
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Тропической рыбыя.
+      Message: Ты убил 100 Тропической рыбыя!
+      Name: kills_100_tropical_fish
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Тропической рыбы.
+      Message: Ты убил 250 Тропической рыбы!
+      Name: kills_250_tropical_fish
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Тропической рыбы.
+      Message: Ты убил 500 Тропической рыбы!
+      Name: kills_500_tropical_fish
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Тропической рыбы.
+      Message: Ты убил 1000 Тропической рыбы!
+      Name: kills_1000_tropical_fish
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  drowned:
+    1:
+      Goal: Убить Утопленика.
+      Message: Ты убил Утопленика!
+      Name: kills_1_drowned
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Утоплеников.
+      Message: Ты убил 25 Утоплеников!
+      Name: kills_25_drowned
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Утоплеников.
+      Message: Ты убил 50 Утоплеников!
+      Name: kills_50_drowned
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Утоплеников.
+      Message: Ты убил 100 Утоплеников!
+      Name: kills_100_drowned
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Утоплеников.
+      Message: Ты убил 250 Утоплеников!
+      Name: kills_250_drowned
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Утоплеников.
+      Message: Ты убил 500 Утоплеников!
+      Name: kills_500_drowned
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Утоплеников.
+      Message: Ты убил 1000 Утоплеников!
+      Name: kills_1000_drowned
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  dolphin:
+    1:
+      Goal: Убить Дельфина.
+      Message: Ты убил Дельфина!
+      Name: kills_1_dolphin
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Дельфинов.
+      Message: Ты убил 25 Дельфинов!
+      Name: kills_25_dolphin
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Дельфинов.
+      Message: Ты убил 50 Дельфинов!
+      Name: kills_50_dolphin
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Дельфинов.
+      Message: Ты убил 100 Дельфинов!
+      Name: kills_100_dolphin
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Дельфинов.
+      Message: Ты убил 250 Дельфинов!
+      Name: kills_250_dolphin
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Дельфинов.
+      Message: Ты убил 500 Дельфинов!
+      Name: kills_500_dolphin
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Дельфинов.
+      Message: Ты убил 1000 Дельфинов!
+      Name: kills_1000_dolphin
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  cat:
+    1:
+      Goal: Убить Кота.
+      Message: Ты убил Кота!
+      Name: kills_1_cat
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Котов.
+      Message: Ты убил 25 Котов!
+      Name: kills_25_cat
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Котов.
+      Message: Ты убил 50 Котов!
+      Name: kills_50_cat
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Котов.
+      Message: Ты убил 100 Котов!
+      Name: kills_100_cat
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Котов.
+      Message: Ты убил 250 Котов!
+      Name: kills_250_cat
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Котов.
+      Message: Ты убил 500 Котов!
+      Name: kills_500_cat
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Котов.
+      Message: Ты убил 1000 Котов!
+      Name: kills_1000_cat
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  panda:
+    1:
+      Goal: Убить Панду.
+      Message: Ты убил Панду!
+      Name: kills_1_panda
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Панд.
+      Message: Ты убил 25 Панд!
+      Name: kills_25_panda
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Панд.
+      Message: Ты убил 50 Панд!
+      Name: kills_50_panda
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Панд.
+      Message: Ты убил 100 Панд!
+      Name: kills_100_panda
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Панд.
+      Message: Ты убил 250 Панд!
+      Name: kills_250_panda
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Панд.
+      Message: Ты убил 500 Панд!
+      Name: kills_500_panda
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Панд.
+      Message: Ты убил 1000 Панд!
+      Name: kills_1000_panda
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  pillager:
+    1:
+      Goal: Убить Разбойника.
+      Message: Ты убил Разбойника!
+      Name: kills_1_pillager
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    100:
+      Goal: Убить 100 Разбойников.
+      Message: Ты убил 100 Разбойников!
+      Name: kills_100_pillager
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    1000:
+      Goal: Убить 1000 Разбойников.
+      Message: Ты убил 1000 Разбойников!
+      Name: kills_1000_pillager
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    10000:
+      Goal: Убить 10000 Разбойников.
+      Message: Ты убил 10000 Разбойников!
+      Name: kills_10000_pillager
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    100000:
+      Goal: Убить 100000 Разбойников.
+      Message: Ты убил 100000 Разбойников!
+      Name: kills_100000_pillager
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    250000:
+      Goal: Убить 250000 Разбойников.
+      Message: Ты убил 250000 Разбойников!
+      Name: kills_250000_pillager
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    500000:
+      Goal: Убить 500000 Разбойников.
+      Message: Ты убил 500000 Разбойников!
+      Name: kills_500000_pillager
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  ravager:
+    1:
+      Goal: Убить Разорителя.
+      Message: Ты убил Разорителя!
+      Name: kills_1_ravager
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Разорителя.
+      Message: Ты убил 25 Разорителя!
+      Name: kills_25_ravager
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Разорителя.
+      Message: Ты убил 50 Разорителя!
+      Name: kills_50_ravager
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Разорителя.
+      Message: Ты убил 100 Разорителя!
+      Name: kills_100_ravager
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Разорителя.
+      Message: Ты убил 250 Разорителя!
+      Name: kills_250_ravager
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Разорителя.
+      Message: Ты убил 500 Разорителя!
+      Name: kills_500_ravager
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Разорителя.
+      Message: Ты убил 1000 Разорителя!
+      Name: kills_1000_ravager
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  wandering_trader:
+    1:
+      Goal: Убить Странствующего торговца.
+      Message: Ты убил Странствующего торговца!
+      Name: kills_1_wandering_trader
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Странствующих торговцев.
+      Message: Ты убил 25 Странствующих торговцев!
+      Name: kills_25_wandering_trader
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Странствующих торговцев.
+      Message: Ты убил 50 Странствующих торговцев!
+      Name: kills_50_wandering_trader
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Странствующих торговцев.
+      Message: Ты убил 100 Странствующих торговцев!
+      Name: kills_100_wandering_trader
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Странствующих торговцев.
+      Message: Ты убил 250 Странствующих торговцев!
+      Name: kills_250_wandering_trader
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Странствующих торговцев.
+      Message: Ты убил 500 Странствующих торговцев!
+      Name: kills_500_wandering_trader
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Странствующих торговцев.
+      Message: Ты убил 1000 Странствующих торговцев!
+      Name: kills_1000_wandering_trader
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  fox:
+    1:
+      Goal: Убить Лису.
+      Message: Ты убил Лису!
+      Name: kills_1_fox
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Лисиц.
+      Message: Ты убил 25 Лисиц!
+      Name: kills_25_fox
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Лисиц.
+      Message: Ты убил 50 Лисиц!
+      Name: kills_50_fox
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Лисиц.
+      Message: Ты убил 100 Лисиц!
+      Name: kills_100_fox
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Лисиц.
+      Message: Ты убил 250 Лисиц!
+      Name: kills_250_fox
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Лисиц.
+      Message: Ты убил 500 Лисиц!
+      Name: kills_500_fox
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Лисиц.
+      Message: Ты убил 1000 Лисиц!
+      Name: kills_1000_fox
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  bee:
+    1:
+      Goal: Убить Пчелу.
+      Message: Ты убил Пчелу!
+      Name: kills_1_bee
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Пчел.
+      Message: Ты убил 25 Пчел!
+      Name: kills_25_bee
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Пчел.
+      Message: Ты убил 50 Пчел!
+      Name: kills_50_bee
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Пчел.
+      Message: Ты убил 100 Пчел!
+      Name: kills_100_bee
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Пчел.
+      Message: Ты убил 250 Пчел!
+      Name: kills_250_bee
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Пчел.
+      Message: Ты убил 500 Пчел!
+      Name: kills_500_bee
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Пчел.
+      Message: Ты убил 1000 Пчел!
+      Name: kills_1000_bee
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  hoglin:
+    1:
+      Goal: Убить Хоглина.
+      Message: Ты убил Хоглина!
+      Name: kills_1_hoglin
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    100:
+      Goal: Убить 100 Хоглинов.
+      Message: Ты убил 100 Хоглинов!
+      Name: kills_100_hoglin
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    1000:
+      Goal: Убить 1000 Хоглинов.
+      Message: Ты убил 1000 Хоглинов!
+      Name: kills_1000_hoglin
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    10000:
+      Goal: Убить 10000 Хоглинов.
+      Message: Ты убил 10000 Хоглинов!
+      Name: kills_10000_hoglin
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    100000:
+      Goal: Убить 100000 Хоглинов.
+      Message: Ты убил 100000 Хоглинов!
+      Name: kills_100000_hoglin
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    250000:
+      Goal: Убить 250000 Хоглинов.
+      Message: Ты убил 250000 Хоглинов!
+      Name: kills_250000_hoglin
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    500000:
+      Goal: Убить 500000 Хоглинов.
+      Message: Ты убил 500000 Хоглинов!
+      Name: kills_500000_hoglin
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  piglin:
+    1:
+      Goal: Убить Пиглина.
+      Message: Ты убил Пиглина!
+      Name: kills_1_piglin
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    100:
+      Goal: Убить 100 Пиглинов.
+      Message: Ты убил 100 Пиглинов!
+      Name: kills_100_piglin
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    1000:
+      Goal: Убить 1000 Пиглинов.
+      Message: Ты убил 1000 Пиглинов!
+      Name: kills_1000_piglin
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    10000:
+      Goal: Убить 10000 Пиглинов.
+      Message: Ты убил 10000 Пиглинов!
+      Name: kills_10000_piglin
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    100000:
+      Goal: Убить 100000 Пиглинов.
+      Message: Ты убил 100000 Пиглинов!
+      Name: kills_100000_piglin
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    250000:
+      Goal: Убить 250000 Пиглинов.
+      Message: Ты убил 250000 Пиглинов!
+      Name: kills_250000_piglin
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    500000:
+      Goal: Убить 500000 Пиглинов.
+      Message: Ты убил 500000 Пиглинов!
+      Name: kills_500000_piglin
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  strider:
+    1:
+      Goal: Убить Лавомерку.
+      Message: Ты убил Лавомерку!
+      Name: kills_1_strider
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Лавомерок.
+      Message: Ты убил 25 Лавомерок!
+      Name: kills_25_strider
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Лавомерок.
+      Message: Ты убил 50 Лавомерок!
+      Name: kills_50_strider
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Лавомерок.
+      Message: Ты убил 100 Лавомерок!
+      Name: kills_100_strider
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Лавомерок.
+      Message: Ты убил 250 Лавомерок!
+      Name: kills_250_strider
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Лавомерок.
+      Message: Ты убил 500 Лавомерок!
+      Name: kills_500_strider
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Лавомерок.
+      Message: Ты убил 1000 Лавомерок!
+      Name: kills_1000_strider
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  zoglin:
+    1:
+      Goal: Убить Зоглина.
+      Message: Ты убил Зоглина!
+      Name: kills_1_zoglin
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Зоглинов.
+      Message: Ты убил 25 Зоглинов!
+      Name: kills_25_zoglin
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Зоглинов.
+      Message: Ты убил 50 Зоглинов!
+      Name: kills_50_zoglin
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Зоглинов.
+      Message: Ты убил 100 Зоглинов!
+      Name: kills_100_zoglin
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Зоглинов.
+      Message: Ты убил 250 Зоглинов!
+      Name: kills_250_zoglin
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Зоглинов.
+      Message: Ты убил 500 Зоглинов!
+      Name: kills_500_zoglin
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Зоглинов.
+      Message: Ты убил 1000 Зоглинов!
+      Name: kills_1000_zoglin
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  player:
+    1:
+      Goal: Убить Игрока.
+      Message: Ты убил Игрока!
+      Name: kills_1_player
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Игроков.
+      Message: Ты убил 25 Игроков!
+      Name: kills_25_player
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Игроков.
+      Message: Ты убил 50 Игроков!
+      Name: kills_50_player
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Игроков.
+      Message: Ты убил 100 Игроков!
+      Name: kills_100_player
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Игроков.
+      Message: Ты убил 250 Игроков!
+      Name: kills_250_player
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Игроков.
+      Message: Ты убил 500 Игроков!
+      Name: kills_500_player
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Игроков.
+      Message: Ты убил 1000 Игроков!
+      Name: kills_1000_player
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# When a specific target is shot (but not necessarily killed) with a projectile.
+# Когда конкретная цель поражена (но не обязательно убита) снарядом.
+
+# Available target block names: github.com/PyvesB/advanced-achievements/wiki/Material-names
+# Доступные имена целевых блоков: github.com/PyvesB/advanced-achievements/wiki/Material-names
+
+# Available target entity names: github.com/PyvesB/advanced-achievements/wiki/Entity-names
+# Доступные имена целевых сущностей: github.com/PyvesB/advanced-achievements/wiki/Entity-names
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+TargetsShot:
+  villager:
+    10:
+      Goal: Throw things at villagers.
+      Message: You lapidated villagers 10 times.
+      Name: targetsshot_10_villager
+      DisplayName: The Stoner
+      Type: normal
+  glass:
+    100:
+      Goal: Try to break granny's windows.
+      Message: You shot 100 projectiles at glass blocks!
+      Name: targetsshot_100_glass
+      DisplayName: Window Breaker
+      Type: normal
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# When a specific item is crafted (available names: github.com/PyvesB/advanced-achievements/wiki/Material-names).
+# Когда создается определенный элемент (доступные названия: github.com/PyvesB/advanced-achievements/wiki/Material-names).
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Crafts:
+  diamond_sword:
+    1:
+      Goal: Craft a sword.
+      Message: The first time you crafted a blade!
+      Name: craft_1_blade
+      DisplayName: Blacksmith Apprentice
+      Type: normal
+      Reward:
+        Money: 2
+    100:
+      Goal: Craft 100 swords.
+      Message: Next craft, Excalibur?
+      Name: craft_100_blade
+      DisplayName: Blacksmith Legend
+      Type: rare
+      Reward:
+        Experience: 500
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# When a player enters a specific command (specify command prefixes in lower case without initial slash).
+# Когда игрок вводит определенную команду (укажите префиксы команд в нижнем регистре без начальной косой черты).
+
+# For instance a command /awf add world from the AntiWorldFly plugin matches with subcategory 'awf add'.
+# Например, команда / awf add world из плагина AntiWorldFly соответствует подкатегории 'awf add'.
+
+# Aliases of a given command will also be taken into account.
+# Псевдонимы данной команды также будут приняты во внимание.
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+PlayerCommands:
+  aach stats:
+    10:
+      Goal: Check your stats 10x.
+      Message: Run the stats command 10 times!
+      Name: playercommand_aachstats_10
+      DisplayName: Statistician
+      Type: normal
+      Rewards:
+        Command:
+          Execute: say §7PLAYER is now a statistician
+          Display: Broadcast
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# When animals breed (available names: github.com/PyvesB/advanced-achievements/wiki/Entity-names).
+# Когда животные размножаются (доступные названия: github.com/PyvesB/advanced-achievements/wiki/Entity-names).
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Breeding:
+  sheep:
+    1:
+      Goal: Убить Игрока.
+      Message: Ты убил Игрока!
+      Name: breeding_1_sheep
+      DisplayName: Любитель
+      Type: normal
+      Reward:
+        Experience: 100
+    25:
+      Goal: Убить 25 Игроков.
+      Message: Ты убил 25 Игроков!
+      Name: breeding_25_sheep
+      DisplayName: Мастер!
+      Type: normal
+      Reward:
+        Experience: 500
+    50:
+      Goal: Убить 50 Игроков.
+      Message: Ты убил 50 Игроков!
+      Name: breeding_50_sheep
+      DisplayName: Профессионал!
+      Type: normal
+      Reward:
+        Experience: 1000
+    100:
+      Goal: Убить 100 Игроков.
+      Message: Ты убил 100 Игроков!
+      Name: breeding_100_sheep
+      DisplayName: Непревзойденный!
+      Type: normal
+      Reward:
+        Experience: 2500
+    250:
+      Goal: Убить 250 Игроков.
+      Message: Ты убил 250 Игроков!
+      Name: breeding_250_sheep
+      DisplayName: Наркоман!
+      Type: normal
+      Reward:
+        Experience: 5000
+    500:
+      Goal: Убить 500 Игроков.
+      Message: Ты убил 500 Игроков!
+      Name: breeding_500_sheep
+      DisplayName: Бог!
+      Type: normal
+      Reward:
+        Experience: 7500
+    1000:
+      Goal: Убить 1000 Игроков.
+      Message: Ты убил 1000 Игроков!
+      Name: breeding_1000_sheep
+      DisplayName: Minecraft в твоей власти!
+      Type: normal
+      Reward:
+        Experience: 10000
+  
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# When you level up in a job (job name lower case).
+# Когда вы повышаете уровень в должности (нижний регистр имени).
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+JobsReborn:
+  hunter:
+    1:
+      Goal: Level up as a hunter!
+      Message: You have reached hunter level 2!
+      Name: jobsreborn_1_hunter
+      DisplayName: Hunter
+      Type: normal
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#===========================OOO=OOO===========================#
+# VI-------------------------------------------------------VI #
+# |               Normal action achievements                | #
+# |           These are based on thresholds only            | #
+# 6---------------------------------------------------------6 #
+#===========================ooo=ooo===========================#
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# When a player connects during the day; statistic increases at most once per day.
+# Когда игрок подключается в течение дня; статистика увеличивается не чаще одного раза в день.
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Connections:
+  1:
+    Message: You connected to our server for the first time!
+    Name: connect_1
+    DisplayName: Good Choice
+    Type: normal
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# When the player dies.
+# Когда игрок умирает.
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Deaths:
+  1:
+    Goal: You have to Die.
+    Message: The first time you died!
+    Name: deaths_1
+    DisplayName: Rest in Peace
+    Type: normal
+    Reward:
+        # Text after the material and quantity is interpreted as a custom name, shown in /aach list and when receiving the reward.
+        Item: stone 5 Tombstone
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# When an arrow is shot.
+# Когда стреляет стрела.
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Arrows:
+  50:
+    Goal: Shoot 50 arrows.
+    Message: 50 arrows shot!
+    Name: arrows_50
+    DisplayName: Arrows Around the Place
+    Type: normal
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# When a snowball is thrown
+# Когда брошен снежок
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Snowballs:
+  1000:
+    Goal: Throw 1000 snowballs.
+    Message: 1000 snowballs thrown. That's the spirit!
+    Name: snowballs_1000
+    DisplayName: Winter Addict
+    Type: normal
+    Reward:
+        # 30 corresponds to one bubble in the oxygen bar.
+        IncreaseMaxOxygen: 30
+
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# When an egg is thrown.
+# Когда брошено яйцо.
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Eggs:
+  1000:
+    Goal: Throw 1000 eggs.
+    Message: 1000 eggs thrown!
+    Name: eggs_1000
+    DisplayName: Omelet Addict
+    Type: normal
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# When a fish is caught.
+# Когда рыба поймана.
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Fish:
+  1:
+    Goal: Fish a fish.
+    Message: The first time you caught a fish!
+    Name: fish_1
+    DisplayName: Time for Fish and Chips
+    Type: normal
+
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# When a treasure is caught with a fishing rod.
+# Когда клад пойман удочкой.
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Treasures:
+  1:
+    Goal: Get a treasure from the sea.
+    Message: Your first treasure from the sea!
+    Name: treasure_1
+    DisplayName: Treasure Hunter
+    Type: normal
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# When a tool/armor/weapon is broken.
+# Когда сломан инструмент / броня / оружие.
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ItemBreaks:
+  1:
+    Goal: Let an item break.
+    Message: You broke your favorite tool!
+    Name: itembreaks_1
+    DisplayName: §4Clumsy Guy
+    Type: normal
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# When an item is eaten (excludes potions and milk).
+# Когда предмет съеден (исключая зелья и молоко).
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+EatenItems:
+  1:
+    Goal: Eat something.
+    Message: Just had a snack!
+    Name: eatenitems_1
+    DisplayName: First Snack
+    Type: normal
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# When a sheep is sheared.
+# Когда стригут овцу.
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Shear:
+  100:
+    Goal: Shear 100 sheep.
+    Message: 100 sheep sheared!
+    Name: shear_100
+    DisplayName: §1Wool Addict
+    Type: normal
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# When a cow is milked.
+# Когда доят корову.
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Milk:
+  1:
+    Goal: Milk a cow.
+    Message: §eJust milked a cow!.... §cMOOW
+    Name: milk_1
+    DisplayName: First Milk
+    Type: normal
+    Reward:
+      Experience: 100
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# When a bucket is filled with lava.
+# Когда ведро заполнено лавой.
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+LavaBuckets:
+  10:
+    Goal: Fill 10 buckets with lava.
+    Message: 10 buckets filled with lava!
+    Name: lavabuckets_10
+    DisplayName: Pyroman
+    Type: normal
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# When a bucket is filled with water.
+# Когда ведро наполнено водой.
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+WaterBuckets:
+  15:
+    Goal: Fill 10 buckets with water.
+    Message: 15 buckets filled with water!
+    Name: waterbuckets_15
+    DisplayName: Fireman
+    Type: normal
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# When a trade with a villager is made.
+# Когда совершается торговля с сельским жителем.
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Trades:
+  1:
+    Goal: Trade with a villager.
+    Message: Doing business with your first villager!
+    Name: trades_1
+    DisplayName: First Trade
+    Type: normal
+    
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# When an anvil is used.
+# Когда используется наковальня.
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+AnvilsUsed:
+  1:
+    Goal: Repair an item.
+    Message: You just repaired your first item!
+    Name: anvilsused_1
+    DisplayName: First Repair
+    Type: normal
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# When an enchantment is performed.
+# Когда чары выполнены.
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Enchantments:
+  5:
+    Goal: Enchant 5 things.
+    Message: 5 objects enchanted!
+    Name: enchantments_5
+    DisplayName: §5Wizard
+    Type: normal
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# When a bed is entered.
+# Когда залез в кровать.
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Beds:
+  5:
+    Goal: Sleep 5 times.
+    Message: You entered a bed 5 times!
+    Name: bed_5
+    DisplayName: Sleepy Guy
+    Type: normal
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+# Maximum level reached.
+# Достигнут максимальный уровень.
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+MaxLevel:
+  10:
+    Goal: Reach level 10.
+    Message: Level 10 reached!
+    Name: maxlevel_10
+    DisplayName: §4Rookie
+    Type: normal
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# When a potion is consumed.
+# Когда выпито зелье.
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ConsumedPotions:
+  100:
+    Goal: Drink 100 potions.
+    Message: Drinking weird beverages all the time...
+    Name: consumedpotions_100
+    DisplayName: Alcoholic
+    Type: normal
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
